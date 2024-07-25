@@ -17,7 +17,7 @@ You can run the server with HTTPS, by using a self-signed certificate:
 
 <img src="https://github.com/user-attachments/assets/2f3648a2-971c-441a-957d-1d6b30450c39" alt="78e0f69ba4ab9414512e6c6909c92865.png" width="712" height="77">
 
-Note: In the images above, I'm running a bash file named httpserver that runs httpserver_plus.py. This is the bash file contents:
+Note: In the images above, I'm running a bash file named `httpserver` that runs `httpserver_plus.py`. This is the bash file contents:
 ```bash
 python3 /path/to/python/script/httpserver_plus.py $@
 ```
