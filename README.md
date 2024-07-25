@@ -15,7 +15,7 @@ In the second image, you'll notice that the user received a `200` status code de
 
 ### Usage
 ```bash
-usage: simple_http_server.py [-h] [-p PORT] [-d DIRECTORY]
+usage: simple_http_server_improved.py [-h] [-p PORT] [-d DIRECTORY]
 
 A simple http server to avoid using extensions.
 
