@@ -9,10 +9,13 @@ As shown in the image below, you can define routes. For example, if the user nav
 
 <img src="https://github.com/user-attachments/assets/afab892a-b772-4f14-a81c-c8b41ef24876" alt="Defined-routes-example" width="260" height="94">
 
-In the second image, you'll notice that the user received a `200` status code despite visiting `/about` instead of `/about.html`.
+In the image below, you'll notice that the user received a `200` status code despite visiting `/about` instead of `/about.html`.
 
 <img src="https://github.com/user-attachments/assets/dfe0d09a-c7ab-4981-bcc3-6afb47817b62" alt="Defined-routes-example2" width="461" height="121">
 
+You can also use HTTPS by using a self-signed certificate:
+
+<img src="https://github.com/user-attachments/assets/2f3648a2-971c-441a-957d-1d6b30450c39" alt="78e0f69ba4ab9414512e6c6909c92865.png" width="712" height="77">
 
 ### Usage
 ```bash
