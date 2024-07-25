@@ -18,7 +18,7 @@ You can also use HTTPS by using a self-signed certificate:
 <img src="https://github.com/user-attachments/assets/2f3648a2-971c-441a-957d-1d6b30450c39" alt="78e0f69ba4ab9414512e6c6909c92865.png" width="712" height="77">
 
 ### Usage
-```bash
+```
 usage: httpserver_plus.py [-h] [-p PORT] [-d DIRECTORY] [-sc [SSL_CERTIFICATE]] [-sk [SSL_KEY]]
 
 An improved version of Pythons SimpleHTTPServer, created for redirection purposes.
