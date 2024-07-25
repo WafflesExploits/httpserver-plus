@@ -1,5 +1,5 @@
 # HTTPServer Plus
-### -> An improved version of Python's SimpleHTTPServer, created for redirection purposes.
+### -> An improved version of Python's http.server, created for redirection purposes.
 I’m sharing this script because I found it incredibly useful, and I hope many of you will too.
 Feel free to share any improvements or suggestions. Happy Hacking!
 ### Description
@@ -26,7 +26,7 @@ python3 /path/to/python/script/httpserver_plus.py $@
 ```
 usage: httpserver_plus.py [-h] [-p PORT] [-d DIRECTORY] [-sc [SSL_CERTIFICATE]] [-sk [SSL_KEY]]
 
-An improved version of Pythons SimpleHTTPServer, created for redirection purposes.
+An improved version of Pythons http.server, created for redirection purposes.
 
 Rerout Example: localhost/about -> localhost/about.html
 
