@@ -1,5 +1,5 @@
 # HTTPServer Plus
-### -> An slightly improved version of Python's SimpleHTTPServer, created for redirection purposes.
+### -> An improved version of Python's SimpleHTTPServer, created for redirection purposes.
 I’m sharing this script because I found it incredibly useful, and I hope many of you will too.
 Feel free to share any improvements or suggestions. Happy Hacking!
 ### Description
@@ -19,9 +19,9 @@ You can also use HTTPS by using a self-signed certificate:
 
 ### Usage
 ```bash
-usage: simple_http_server_improved.py [-h] [-p PORT] [-d DIRECTORY]
+usage: httpserver_plus.py [-h] [-p PORT] [-d DIRECTORY] [-sc [SSL_CERTIFICATE]] [-sk [SSL_KEY]]
 
-A simple http server to avoid using extensions.
+An improved version of Pythons SimpleHTTPServer, created for redirection purposes.
 
 Rerout Example: localhost/about -> localhost/about.html
 
@@ -30,7 +30,17 @@ options:
   -p PORT, --port PORT  Specify Port to use.
   -d DIRECTORY, --directory DIRECTORY
                         Specify directory where .html pages are stored.
+  -sc [SSL_CERTIFICATE], --ssl-certificate [SSL_CERTIFICATE]
+                        Specify the path to SSL's .cert file, to use HTTPS.
+  -sk [SSL_KEY], --ssl-key [SSL_KEY]
+                        Specify the path to SSL's .key file, to use HTTPS.
 
-[Usage Example]
-sudo python3 simple_http_server.py -p 80 -d <path-to-server-files>
+[HTTP Usage Example]
+ sudo python3 httpserver_plus.py -p <PORT> -d <path-to-directory-with-html-files>
+
+[HTTPS Usage Example]
+ 1. Generate a self-signed SSL Certificate.
+  openssl req -new -x509 -keyout server.key -out server.crt -days 365 -nodes
+ 2. Run the script with -sc and -sk flags.
+  sudo python3 httpserver_plus.py -p <PORT> -d "<path-to-directory-with-html-files>" -sc "<path-to-server.crt-file>" -sk "<path-to-server.key-file>"
 ``
