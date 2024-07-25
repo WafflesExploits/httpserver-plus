@@ -48,4 +48,4 @@ options:
   openssl req -new -x509 -keyout server.key -out server.crt -days 365 -nodes
  2. Run the script with -sc and -sk flags.
   sudo python3 httpserver_plus.py -p <PORT> -d "<path-to-directory-with-html-files>" -sc "<path-to-server.crt-file>" -sk "<path-to-server.key-file>"
-``
+```
