@@ -7,7 +7,7 @@ import ssl
 import os
 import sys
 
-parser = argparse.ArgumentParser(description='A simple http server to avoid using extensions.\n\nRerout Example: localhost/about -> localhost/about.html',epilog="[HTTP Usage Example]\n sudo python3 simple_http_server_improved.py -p <PORT> -d <path-to-directory-with-html-files>\n\n[HTTPS Usage Example]\n 1. Generate a self-signed SSL Certificate.\n  openssl req -new -x509 -keyout server.key -out server.crt -days 365 -nodes\n 2. Run the script with -sc and -sk flags.\n  sudo httpserver -p <PORT> -d \"<path-to-directory-with-html-files>\" -sc \"<path-to-server.crt-file>\" -sk \"<path-to-server.key-file>\"" ,formatter_class=argparse.RawTextHelpFormatter)
+parser = argparse.ArgumentParser(description='A simple http server to avoid using extensions.\n\nRerout Example: localhost/about -> localhost/about.html',epilog="[HTTP Usage Example]\n sudo python3 httpserver_plus.py -p <PORT> -d <path-to-directory-with-html-files>\n\n[HTTPS Usage Example]\n 1. Generate a self-signed SSL Certificate.\n  openssl req -new -x509 -keyout server.key -out server.crt -days 365 -nodes\n 2. Run the script with -sc and -sk flags.\n  sudo python3 httpserver_plus.py -p <PORT> -d \"<path-to-directory-with-html-files>\" -sc \"<path-to-server.crt-file>\" -sk \"<path-to-server.key-file>\"" ,formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument('-p','--port', type=str, help="Specify Port to use.")
 parser.add_argument('-d','--directory', type=str, help="Specify directory where .html pages are stored.")
 parser.add_argument('-sc','--ssl-certificate', nargs='?' ,type=str, help="Specify the path to SSL's .cert file, to use HTTPS.")
