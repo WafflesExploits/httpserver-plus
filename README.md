@@ -1,5 +1,5 @@
-# SimpleHTTPServer Improved
-### -> This is slightly improved version of Python's SimpleHTTPServer, created for redirection purposes.
+# HTTPServer Plus
+### -> An slightly improved version of Python's SimpleHTTPServer, created for redirection purposes.
 I’m sharing this script because I found it incredibly useful, and I hope many of you will too.
 Feel free to share any improvements or suggestions. Happy Hacking!
 ### Description
