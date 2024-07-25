@@ -10,6 +10,7 @@ As shown in the image below, you can define routes. For example, if the user nav
 <img src="https://github.com/user-attachments/assets/afab892a-b772-4f14-a81c-c8b41ef24876" alt="Defined-routes-example" width="260" height="94">
 
 In the second image, you'll notice that the user received a `200` status code despite visiting `/about` instead of `/about.html`.
+
 <img src="https://github.com/user-attachments/assets/dfe0d09a-c7ab-4981-bcc3-6afb47817b62" alt="Defined-routes-example2" width="461" height="121">
 
 
