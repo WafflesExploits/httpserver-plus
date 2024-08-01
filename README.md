@@ -11,11 +11,11 @@ As shown in the image below, you can define routes. For example, if the user nav
 
 In the image below, you'll notice that the user received a `200` status code despite visiting `/about` instead of `/about.html`. This is because the user got redirected.
 
-<img src="https://github.com/user-attachments/assets/dabf1601-1367-42e0-9ab3-1481e87cacb2" alt="Defined-routes-example2" width="461" height="121">
+<img src="https://github.com/user-attachments/assets/82d52bd5-6b41-4248-af95-df65aa73f4db" alt="Defined-routes-example2" width="461" height="121">
 
 You can run the server with HTTPS, by using a self-signed certificate:
 
-<img src="https://github.com/user-attachments/assets/2f3648a2-971c-441a-957d-1d6b30450c39" alt="78e0f69ba4ab9414512e6c6909c92865.png" width="712" height="77">
+<img src="https://github.com/user-attachments/assets/d61939aa-a1dc-4bcf-bc1c-60952c026b27" alt="78e0f69ba4ab9414512e6c6909c92865.png" width="712" height="77">
 
 Note: In the images above, I'm running a bash file named `httpserver` that runs `httpserver_plus.py`. This is the bash file contents:
 ```bash
