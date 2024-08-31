@@ -24,7 +24,7 @@ python3 /path/to/python/script/httpserver_plus.py $@
 
 ### Usage
 ```
-usage: httpserver_plus.py [-h] [-p PORT] [-d DIRECTORY] [-sc [SSL_CERTIFICATE]] [-sk [SSL_KEY]]
+usage: httpserver-plus.py [-h] [-p PORT] [-d DIRECTORY] [-sc [SSL_CERTIFICATE]] [-sk [SSL_KEY]]
 
 An improved version of Pythons http.server, created for redirection purposes.
 
@@ -45,7 +45,7 @@ options:
 
 [HTTPS Usage Example]
  1. Generate a self-signed SSL Certificate.
-  openssl req -new -x509 -keyout server.key -out server.crt -days 365 -nodes
+  openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out public.crt -keyout private.key
  2. Run the script with -sc and -sk flags.
   sudo python3 httpserver_plus.py -p <PORT> -d "<path-to-directory-with-html-files>" -sc "<path-to-server.crt-file>" -sk "<path-to-server.key-file>"
 ```
